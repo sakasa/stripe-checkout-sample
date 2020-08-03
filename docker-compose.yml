@@ -1,0 +1,16 @@
+version: '3'
+
+services: 
+  stripe-server:
+    container_name: "stripe-server"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./client-and-server:/var/stripe"
+    environment:
+      TZ: Asia/Tokyo
+      FLASK_APP: server.py
+    ports:
+      - "4242:4242"
+    tty: true
