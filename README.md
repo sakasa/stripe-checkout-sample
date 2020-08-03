@@ -1,4 +1,10 @@
 # stripe-checkout-sample
+
+```text
+Stripe Checkoutのサンプルコード実行環境をDocker上で構築します。
+サーバーサイドPythonで動作する環境を構築しています。
+```
+
 [Stripe-Checkout](https://stripe.com/docs/payments/checkout) client&server sample for python on docker.
 
 Use.
@@ -13,31 +19,34 @@ Ref:
 ## Usage
 
 ### git clone sample code
-```
+```bash
 git clone https://github.com/stripe-samples/checkout-single-subscription.git
 ```
 
-### copy .env
-```
+### Copy .env
+```bash
 cp checkout-single-subscription/.env.example checkout-single-subscription/client-and-server/server/python/.env
 ```
 
 ### git clone this repository
-```
+```bash
 git clone https://github.com/sakasa/stripe-checkout-sample.git
 ```
 
-### move sample to stripe-checkout-sample
-```
+### Move sample to stripe-checkout-sample.
+```bash
 mv checkout-single-subscription/client-and-server stripe-checkout-sample/
 ```
 
 ### docker-compose up
-```
+```bash
 cd stripe-checkout-sample/
 docker-compose up
 ```
 
-### access sample web
+### Access sample web.
 http://localhost:4242
 
+
+## TODO Update your environment.
+自身の環境に合わせて `.env` ファイルや `client` 側のコード（HTML、javascript等）を修正してください。
