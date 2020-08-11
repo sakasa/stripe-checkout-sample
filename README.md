@@ -50,3 +50,7 @@ http://localhost:4242
 
 ## TODO Update your environment.
 自身の環境に合わせて `.env` ファイルや `client` 側のコード（HTML、javascript等）を修正してください。
+
+## Blog
+https://note.com/ppiicckkllees/n/nf64f1126515b
+
